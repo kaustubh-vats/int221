@@ -1,0 +1,25 @@
+*{
+    font-family: "NetFlixSans Light", sans-serif;
+}
+.main_container{
+    padding: 20px 135px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0 0 16px;
+}
+.links{
+    text-decoration: none;
+    color: #E50914;
+}
+.links:hover{
+    text-decoration: underline;
+}
+ul{
+    margin: 0 0 8px;
+    padding: 0 0 0 24px;
+    position: relative;
+}
+.circle li{
+    list-style-type: circle;
+}

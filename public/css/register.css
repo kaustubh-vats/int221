@@ -1,0 +1,60 @@
+body{
+    font-family: "NetFlixSans Medium", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.svg-icon-netflix-logo{
+    fill: #E50914;
+    width: 140px;
+}
+header a{
+    margin: auto 0px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "NetFlixSans Medium", sans-serif;
+}
+header a:hover{
+    text-decoration: underline;
+}
+.main{
+    max-width: 450px;
+    margin: 20px auto;
+    position: relative;
+}
+.devices{
+    width: 350px;
+    margin: 120px 50px 20px 50px;
+}
+.first{
+    text-align: center;
+}
+.second{
+    display: none;
+}
+.btn{
+    padding: 30px;
+    background: #E50914;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border-radius: 4px;
+    font-family: "NetFlixSans Medium", sans-serif;
+    border: none;
+}
+.btn:hover{
+    background: #bb0a13;
+}
+input{
+    width: calc(100% - 22px);
+    padding: 20px 10px;
+    margin: 10px 0px;
+}

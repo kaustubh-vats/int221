@@ -1,0 +1,243 @@
+body, html{
+    background: transparent;
+
+}
+.bg_img{
+    height: 100%;
+    width: 100vw;
+    object-position: center;
+    object-fit: cover;
+}
+.imgcont{
+    min-height: 100vh;
+    position: absolute;
+    background-size: cover;
+    background: #000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.shadow{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+}
+.login_container{
+    position: relative;
+}
+.logo_netflix{
+    position: absolute;
+    fill: #E50914;
+    width: 170px;
+    left:50px;
+    top: 23px;
+}
+.form_login{
+    background-color: rgba(0,0,0,.75);
+    max-width: calc(450px - 130px);
+    padding: 65px;
+    margin: auto;
+    color: #fff;
+}
+.main_login{
+    margin: 0px auto;
+    padding: 110px;
+}
+.footer{
+    background-color: transparent;
+}
+.expand, .short{
+    margin: 1em 0px;
+    font-size: 14px;
+    color: #737373;
+}
+.expand{
+    visibility: hidden;
+}
+.blue_text{
+    text-decoration: none;
+    color: #006ED7;
+    cursor: pointer;
+}
+.blue_text:hover{
+    text-decoration: underline;
+}
+.new_to_netflix{
+    margin-top: 1em;
+    font-size: 16px;
+    color: #737373;
+}
+.new_to_netflix a{
+    color: white;
+}
+.new_to_netflix a:hover{
+    text-decoration: underline;
+}
+.fb_logo{
+    height: 20px;
+    width: 20px;
+}
+.fb_login{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #737373;
+    margin-top: 16px;
+}
+.form_group2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #737373;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+.remeber{
+    background-color: #737373;
+}
+.btn_login{
+    background-color: #E50914;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin: 24px 0px 12px 0px;
+}
+.form_group{
+    position: relative;
+    margin: 16px 0px;
+}
+.login_inp{
+    width: calc(100% - 32px);
+    background-color: #333;
+    outline: none;
+    border: none;
+    padding: 16px;
+    color: #fff;
+}
+.hero__label{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #737373;
+    display: none;
+}
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+#showPasswordBtn{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 16px;
+    color: #737373;
+    cursor: pointer;
+    display: none;
+    text-transform: uppercase;
+}
+.login_inp{
+    border-radius: 4px;
+}
+.login_inp:focus .hero__label{
+    display: block;
+}
+.login_inp:focus::placeholder{
+    color: transparent;
+}
+.warning_label{
+    color: #EF8317;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.frm_title{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+#password{
+    width: calc(100% - 66px);
+    padding-right: 50px;
+}
+@keyframes pushup {
+    from{
+        font-size: 16px;
+        top: 50%;
+        left: 25px;
+    } to {
+        font-size: 10px;
+        top: 15%;
+        left: 16px;
+    }
+}
+
+
+.lang__select__footer{
+    width: 100px;
+}
+footer{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.75);
+}
+footer div{
+    width: 65vw;
+}
+.footer_text{
+    text-decoration: none;
+    color: #757575;
+    font-size: 13px;
+}
+.footer_top{
+    font-size: 16px;
+    margin: 35px 0px;
+}
+.footer_a{
+    color: #757575;
+    text-decoration: none;
+}
+.footer_list{
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(4, 1fr);
+}
+.select__lang_footer{
+    padding: 15px 40px;
+    color: #8f8f8f;
+    border: #757575 solid 1px;
+}
+.lang__select__footer::after{
+    font-size: 8px;
+    right: -20px;
+    color: #8f8f8f;
+}
+.lang__select__footer::before{
+    font-size: 1rem;
+    left: 10px;
+    color: #8f8f8f;
+}
+.footer_list li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 16px;
+}
+.copyrt{
+    margin-top: 20px;
+}

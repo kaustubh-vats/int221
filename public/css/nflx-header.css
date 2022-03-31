@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'NetFlixSans Light', sans-serif;
+}
+.header{
+    width: calc(100vw - 120px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75px;
+    padding: 0px 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+header{
+    position: fixed;
+    z-index: 4;
+}
+header::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0, rgba(0,0,0,0.2) 50%, transparent 100%);
+}
+.svg-icon-netflix-logo{
+    width: 130px;
+    fill: #E50914;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.nflx-logo{
+    gap: 10px;
+    display: flex;
+}
+html{
+    font-family: sans-serif;
+}
+.angle-down{
+    fill: #cfcfcf;
+}
+.header__container div{
+    display: flex;
+    gap:2px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    align-items: center;
+}
+.header_divs p:hover{
+    color: #E50914;
+}
+.selected{
+    color: #E50914;
+}
+.level2{
+    background-color: white;
+    margin: 0;
+    padding: 50px 20px 10px 20px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%);
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    min-width: 80vw;
+    justify-content: space-evenly;
+    display: none;
+    z-index: 3;
+}
+.level2::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0, rgba(0,0,0,0.2) 50%, transparent 100%);
+}
+.right-bar{
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+.search{
+    background-color: #2B2B2B;
+    position: relative;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+    width: 40px;
+    margin: 0px;
+}
+.search svg{
+    fill: white;
+}
+.search:before{
+    position: absolute;
+    content: '';
+    left: -8px;
+    top: 0px;
+    width: 8px;
+    height: 100%;
+    background-color: #E50914;
+}
+.theme{
+    display: flex;
+    height: 75px;
+    width: 40px;
+    padding: 0px 5px;
+    align-items: center;
+    justify-content: center;
+}
+.theme img{
+    height: 25px;
+    width: 25px;
+}
+.header__container div:hover > .level2{
+    display: flex;
+}
+.level2 li a{
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.level2 li a:hover{
+    color: #E50914;
+}

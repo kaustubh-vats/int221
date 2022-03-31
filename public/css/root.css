@@ -1,0 +1,18 @@
+:root{
+    --primary-color: #E50914;
+    --white: #ffffff;
+    --shadow1: rgba(34,31,31,0.6);
+    --buttonColor: #E50914;
+    --buttonTextColor: #ffffff;
+    --textColorAccent: #ffffff;
+    --shadow2: rgba(0,0,0,0.85);
+}
+body.dark-theme{
+    --primary-color: black;
+    --white: black;
+    --shadow1: #221F1F;
+    --buttonColor: transparent;
+    --buttonTextColor: black;
+    --textColorAccent: #E50914;
+    --shadow2: white;
+}

@@ -1,0 +1,171 @@
+.ir_bottom{
+    background: #F5F5F1;
+    padding-top: 40px;
+    position: relative;
+}
+.financial_releases{
+    position: relative;
+    width: 1250px;
+    margin: auto;
+}
+.financial_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 20px;
+    justify-content: center;
+}
+.financial_card{
+    position: relative;
+    padding: 20px 20px;
+    background: white;
+    box-shadow: 0px 0px 6.02px 0.98px rgb(0 0 0 / 17%);    ;
+}
+.financial_card h1, .financial_card p{
+    margin: 0;
+    padding: 0;
+}
+.financial_card a {
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: var(--primary-color);
+}
+.financial_card p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.financial_card:hover .red_bottom{
+    display: block;
+}
+.financial_title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+.wifi-ico{
+    position: absolute;
+    top: 0px;
+    right:0px;
+}
+.wifi-ico svg{
+    fill: var(--white);
+}
+.ir_bottom_logo{
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+.btn_release{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.all_release_btn{
+    text-transform: uppercase;
+    border: 2px solid var(--buttonColor);
+    background: var(--buttonColor);
+    padding: 10px 20px;
+    font-size: 20px;
+    color: var(--buttonTextColor);
+    transition: all 700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.all_release_btn:hover{
+    background: transparent;
+    color: #E50914;
+}
+.quick_links{
+    padding: 50px 140px 60px 140px;
+}
+.quick_links_container{
+    display: flex;
+    justify-content: space-between;
+    background: #E50914;
+    box-shadow: 0px 0px 6.02px 0.98px rgb(0 0 0 / 17%);
+}
+.quick_links_card img{
+    width: 110px;
+}
+.quick_links_array{
+    padding: 60px 75px;
+    background-color: #ffffff;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.quick_links_card{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quick_links_card h2{
+    max-width: 175px;
+    font-size: 20px;
+    text-align: center;
+}
+.quick_links_title{
+    width: 300px;
+    height: 300px;
+    background: #221F1F;
+    color: var(--textColorAccent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quarterly_earning{
+    background: url(/imgs/quarterly-earnings-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 400px;
+    color: var(--white);
+}
+.quarterly_content{
+    background: var(--shadow2);
+    width:100%;
+    height: calc(100% - 80px);
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.quarterly_links_array{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.quarterly_sub_title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.quarterly_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quarterly_card a{
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 10px;
+}
+.quarterly_card a:hover{
+    color: #E50914;
+}
+.quick_links_card:hover{
+    color:#E50914;
+}

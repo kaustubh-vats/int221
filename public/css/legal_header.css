@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "NetFlixSans Light", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 135px;
+    margin: 0;
+    background-color: #000000;
+    color: white;
+}
+.title_cont{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.title_cont h2{
+    margin: 0;
+    font-weight: 100;
+    font-size:18px;
+}
+.line_sep{
+    height: 100%;
+    width: 1px;
+    background-color: white;
+}
+.svg-icon{
+    width: 90px;
+    fill: #E50914;
+}
+.header__container{
+    display: flex;
+    gap: 20px;
+}
+.join_netflix{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    padding: 5px;
+    font-family: "NetFlixSans Light", sans-serif;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-size: 14px;
+}
+.button_login{
+    background-color: #E50914;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-family: "NetFlixSans Light", sans-serif;
+    font-size: 14px;
+    padding: 6px 20px;
+    border-radius: 2px;
+    color: white;
+}
+.top_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 135px;
+    margin: 0;
+}
+.backtohelphome{
+    color: #E50914;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+.backtohelphome:hover{
+    text-decoration: underline;
+}
+.printBtn{
+    outline: none;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 14px;
+}
