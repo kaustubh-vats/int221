@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 use DB;
+use Mail;
 
 class RegisterUser extends Controller
 {
@@ -27,6 +28,17 @@ class RegisterUser extends Controller
                 }
                 DB::insert('insert into users(email,password,image) values(?,?,?)',[$email,$password,'default']);  
                 session(['email'=>$email]);
+                $subject = "";
+                if($lang=='in-hi'){
+                    $subject = "कौस्तुभ वत्स द्वारा Netflix क्लोन में आपका स्वागत है";
+                }else{
+                    $subject = "Welcome to Netflix Clone by Kaustubh Vats";
+                }
+                Mail::send('mail', $data, function($message) use ($email,$subject){
+                    $message->to($email);
+                    $message->subject($subject);
+                    $message->from('kaustubhvats28@gmail.com','Kaustubh Vats');
+                });
                 Cookie::queue('message', 'User Registered Successfully');
                 return redirect('/'.$lang);
             } catch (\Exception $e){

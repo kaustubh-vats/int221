@@ -99,5 +99,9 @@
         'shows1'=>'UNLIMITED TV SHOWS & MOVIES',
         'shows2'=>'Netflix Originals',
         'shows3'=>'Netflix is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, it’s all tailored specifically to you.',
+        
+        'mailSubject'=>'Welcome to Netflix Clone by Kaustubh Vats',
+        'mailTitle'=>'Hello, Welcome to Netflix Clone',
+        'mailPara'=>'You Have successfully registered for Netflix Clone. <br />Enjoy the project<br />Created by: Kaustubh Vats<br />Thanks',
     ];
 ?>
