@@ -7,6 +7,12 @@
                 <option value="hi" @if ( Config::get("app.locale") == 'in-hi') selected @endif>हिन्दी</option>
             </select>
         </div>
-        <a href="login"><button class="button login">{{__('language.signInBtn')}}</button></a>
+        <a href="login"><button class="button login">
+            @if(request()->session()->has('email'))
+                {{__('language.signOutBtn')}}
+            @else 
+                {{__('language.signInBtn')}}
+            @endif
+        </button></a>
     </div>
 </header>

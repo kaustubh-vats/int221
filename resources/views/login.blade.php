@@ -11,6 +11,20 @@
     <title>Netflix</title>
 </head>
 <body>
+    @if(request()->session()->has('email'))
+    <?php
+        $lang = app()->getlocale();
+        Session::forget('email');
+        Session::flush();
+        dump(Session::all());
+        echo '<script>window.location.href = "http://localhost:8000/'.$lang.'"</script>';
+    ?>
+    @endif
+    @if(isset($error))
+        <script>
+            alert('{{$error}}');
+        </script>
+    @endif
 <div class="login_container">
     <div class="imgcont">
         <img class="bg_img" src="/imgs/bg-hi.jpg" alt="">
@@ -20,8 +34,9 @@
         <div class="form_login">
             <h1 class="frm_title">{{__('language.signInBtn')}}</h1>
             <form action="" method="post">
+                @csrf
                 <div class="form_group">
-                    <input class="login_inp" id="email" type="text" name="username" placeholder="{{__('language.emailorphone')}}" onfocusin="inputfocused()" onfocusout="inputfocusout()"required>
+                    <input class="login_inp" id="email" type="text" name="email" placeholder="{{__('language.emailorphone')}}" onfocusin="inputfocused()" onfocusout="inputfocusout()"required>
                     <label id="hero_label" class="hero__label" for="email_entry">{{__('language.emailorphone')}}</label>
                     <label id="warning_label" class="warning_label"></label>
                 </div>

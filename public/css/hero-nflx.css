@@ -6,7 +6,7 @@
 .img__div_hero{
     width: 59%;
     height: 400px;
-    background: url('/imgs/slider1.jpg');
+    background: url('/int220/imgs/slider1.jpg');
     background-size: cover;
     background-position: center;
 }

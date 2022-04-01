@@ -1,0 +1,81 @@
+body{
+    background: #181818;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "NetFlixSans Medium", sans-serif;;
+}
+.select__lang{
+    background-color: #000000;
+}
+.lang__select::before{
+    content: '\e896';
+    position: absolute;
+    color: white;
+    font-size: .75rem;
+    left: .5rem;
+    font-family: nf-icon;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+option{
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    padding: .25rem 1.375rem;
+}
+.lang__select{
+    background: rgba(0,0,0,.4);
+    border-radius: 2px;
+    margin: 0;
+    color: white;
+    line-height: 1.3em;
+    position: relative;
+}
+.main{
+    padding: 60px 45px 80px 45px;
+}
+.top{
+    max-width: 600px;
+}
+.top h1{
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+.list_cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
+}
+.list_card{
+    min-width: 300px;
+    color: white;
+    text-decoration: none;
+}
+.list_card:hover{
+    text-decoration: none;
+}
+.series_title{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.listTitle{
+    margin: 10px 0px;
+    font-weight: 100;
+}
+/* width */
+.list_cont::-webkit-scrollbar {
+    display: none;
+}

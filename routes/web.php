@@ -53,15 +53,14 @@ Route::get('/login', function(){
     App::setlocale('en');
     return view('login');
 });
-Route::post('/register', function(){
-    App::setlocale('en');
-    return view('register');
-});
-Route::post('/{lang}/register', function($lang){
-    App::setlocale($lang);
-    return view('register');
-});
-
+Route::get('/account','App\Http\Controllers\AccountController@accountCheck')->middleware('App\Http\Middleware\SetLocale');
+Route::get('/{lang}/account','App\Http\Controllers\AccountController@accountCheck')->middleware('App\Http\Middleware\SetLocale');
+Route::post('/account','App\Http\Controllers\AccountController@savePicture')->middleware('App\Http\Middleware\SetLocale');
+Route::post('/{lang}/account','App\Http\Controllers\AccountController@savePicture')->middleware('App\Http\Middleware\SetLocale');
+Route::post('/login', 'App\Http\Controllers\AuthUser@login')->middleware('App\Http\Middleware\SetLocale');
+Route::post('/{lang}/login', 'App\Http\Controllers\AuthUser@login')->middleware('App\Http\Middleware\SetLocale');
+Route::post('/register', 'App\Http\Controllers\RegisterUser@registerUser')->middleware('App\Http\Middleware\SetLocale');
+Route::post('/{lang}/register', 'App\Http\Controllers\RegisterUser@registerUser')->middleware('App\Http\Middleware\SetLocale');
 Route::get('/{lang}/', function($lang){
     App::setlocale($lang);
     return view('main');

@@ -87,6 +87,12 @@
         'fbsignin' => 'Facebook से लॉग इन करें',
         'newtonflx' => 'Netflix पर नए हैं?',
         'signupnow' => 'अभी साइन अप करें.',
-        'captcha' => '<div class="short">यह पक्का करने के लिए कि आप बॉट नहीं हैं, यह पेज Google reCAPTCHA द्वारा सुरक्षित है. <span id="readmore" class="blue_text" onclick="showmore(this)">और जानें.</span></div> <div class="expand"> Google reCAPTCHA से इकट्ठा की गई जानकारी Google की <a target="_blank" href="https://policies.google.com/privacy" class="blue_text">प्रायवेसी पॉलिसी</a> और <a target="_blank" href="https://policies.google.com/terms" class="blue_text">सेवा की शर्तों</a> के अधीन है. इसे reCAPTCHA सेवा देने, उसे बनाए रखने और सुधारने के लिए और सामान्य सुरक्षा उद्देश्य के लिए इस्तेमाल किया जाता है (Google इसका इस्तेमाल करके पर्सनलाईज़ किए गए विज्ञापन नहीं दिखाता). </div>'
+        'captcha' => '<div class="short">यह पक्का करने के लिए कि आप बॉट नहीं हैं, यह पेज Google reCAPTCHA द्वारा सुरक्षित है. <span id="readmore" class="blue_text" onclick="showmore(this)">और जानें.</span></div> <div class="expand"> Google reCAPTCHA से इकट्ठा की गई जानकारी Google की <a target="_blank" href="https://policies.google.com/privacy" class="blue_text">प्रायवेसी पॉलिसी</a> और <a target="_blank" href="https://policies.google.com/terms" class="blue_text">सेवा की शर्तों</a> के अधीन है. इसे reCAPTCHA सेवा देने, उसे बनाए रखने और सुधारने के लिए और सामान्य सुरक्षा उद्देश्य के लिए इस्तेमाल किया जाता है (Google इसका इस्तेमाल करके पर्सनलाईज़ किए गए विज्ञापन नहीं दिखाता). </div>',
+        
+        'signOutBtn'=> 'साइन आउट करें',
+        'account'=>'अकाउंट',
+        'gotohome'=>'होम पर जाएं',
+        'yourEmail'=>'अपना ईमेल',
+        'changePicture'=>'चित्र को बदलें',
     ];
 ?>

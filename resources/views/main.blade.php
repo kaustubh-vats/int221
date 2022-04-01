@@ -6,4 +6,10 @@
 @include('everywhere')
 @include('children')
 @include('faq')
+@if (Cookie::get('message')!=null) 
+<script>alert('{{Cookie::get("message")}}')</script>
+<?php
+Cookie::queue(Cookie::forget('message'));
+?>
+@endif
 @include('footer')

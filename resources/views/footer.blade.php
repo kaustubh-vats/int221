@@ -4,7 +4,7 @@
         <ul class="footer_list">
             <li><a href="https://help.netflix.com/support/412" class="footer_text footer_a">{{__('language.footer3')}}</a></li>
             <li><a href="https://help.netflix.com/" class="footer_text footer_a">{{__('language.footer4')}}</a></li>
-            <li><a href="#" class="footer_text footer_a">{{__('language.footer5')}}</a></li>
+            <li><a href=@if( Config::get("app.locale") == 'en') "/account" @else "/in-hi/account" @endif class="footer_text footer_a">{{__('language.footer5')}}</a></li>
             <li><a href="https://media.netflix.com/" class="footer_text footer_a">{{__('language.footer6')}}</a></li>
             <li><a href="/ir-overview" class="footer_text footer_a">{{__('language.footer7')}}</a></li>
             <li><a href="https://jobs.netflix.com/jobs" class="footer_text footer_a">{{__('language.footer8')}}</a></li>

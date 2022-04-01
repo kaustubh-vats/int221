@@ -34,7 +34,13 @@ header{
 }
 .header__container{
     display: flex;
+    align-items: center;
     gap: 20px;
+}
+.header__container p{
+    font-size: 13px;
+    font-weight: 100;
+    color: white;
 }
 .join_netflix{
     border: 1px solid white;

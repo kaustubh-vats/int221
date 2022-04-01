@@ -88,5 +88,11 @@
         'newtonflx' => 'New to Netflix?',
         'signupnow' => 'Sign up now.',
         'captcha' => '<div class="short">This page is protected by Google reCAPTCHA to ensure you\'re not a bot. <span id="readmore" class="blue_text" onclick="showmore(this)">Learn more.</span></div> <div class="expand"> The information collected by Google reCAPTCHA is subject to the Google <a target="_blank" href="https://policies.google.com/privacy" class="blue_text">Privacy policy</a> and <a target="_blank" href="https://policies.google.com/terms" class="blue_text">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).. </div>',
+
+        'signOutBtn' => 'Sign Out',
+        'account'=>'Account',
+        'gotohome'=>'Go to Home',
+        'yourEmail'=>'Your Email',
+        'changePicture'=>'Change Picture',
     ];
 ?>

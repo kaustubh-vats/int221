@@ -27,8 +27,9 @@
                 <h6>{{__('language.step')}} <b>1/3<b></h6>
                 <h1>{{__('language.register3')}}</h1>
                 <p>{!!__('language.register4')!!}</p>
-                <form action="register">
-                    <input type="email" name="nextemail" placeholder="ईमेल" value="<?php if(isset($_POST) && isset($_POST['email'])) echo $_POST['email']?>" required>
+                <form action="" method="post">
+                    @csrf
+                    <input type="email" name="email" placeholder="ईमेल" value="<?php if(isset($_POST) && isset($_POST['email'])) echo $_POST['email']?>" required>
                     <input type="password" placeholder="पासवर्ड" name="password" required>
                     <button class="btn" type="submit">{{__('language.next')}}</button>
                 </form>

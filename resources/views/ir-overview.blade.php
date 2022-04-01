@@ -411,10 +411,10 @@
             <div class="right_footer">
                 <div class="social_media">
                     <p>Follow</p>
-                    <a href="" target="_blank" class="fa fa-facebook"></a>
-                    <a href="" target="_blank" class="fa fa-twitter"></a>
-                    <a href="" target="_blank" class="fa fa-instagram"></a>
-                    <a href="" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.facebook.com/kaustubh.vats.5" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/iamkaustubhvats" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/curioustubh/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/kaustubh-vats/" target="_blank" class="fa fa-linkedin"></a>
                 </div>
                 <div class="additional_links">
                     <a href="/termsofuse">Terms of Use</a>
