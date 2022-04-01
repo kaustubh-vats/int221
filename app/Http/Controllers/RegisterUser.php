@@ -10,7 +10,7 @@ use Mail;
 class RegisterUser extends Controller
 {
     //
-    function isValidEmail($email){ 
+    public function isValidEmail($email){ 
         return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
     }
     public function registerUser(Request $req){
@@ -37,7 +37,7 @@ class RegisterUser extends Controller
                 }else{
                     $subject = "Welcome to Netflix Clone by Kaustubh Vats";
                 }
-                if(isValidEmail($email)){
+                if($this->isValidEmail($email)){
                     Mail::send('mail', $data, function($message) use ($email,$subject){
                         $message->to($email);
                         $message->subject($subject);
