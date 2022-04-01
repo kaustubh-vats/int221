@@ -5,10 +5,20 @@
         <h2>{{__('language.helpCenter')}}</h2>
     </div>
     <div class="header__container">
-        <a href=@if ( Config::get("app.locale") == 'en') "\" @else "\in-hi\" @endif class="join_netflix">
-            {{__('language.joinNetflix')}}
+        <a href=@if( Config::get("app.locale") == 'en') "/" @else "/in-hi/" @endif class="join_netflix">
+            @if(request()->session()->has('email'))
+                {{__('language.gotohome')}}
+            @else 
+                {{__('language.joinNetflix')}}
+            @endif
         </a>
-        <a href=@if ( Config::get("app.locale") == 'en') "\login" @else "\in-hi\login" @endif><button class="button_login">{{__('language.signInBtn')}}</button></a>
+        <a href=@if( Config::get("app.locale") == 'en') "/login" @else "/in-hi/login" @endif><button class="button_login">
+            @if(request()->session()->has('email'))
+                {{__('language.signOutBtn')}}
+            @else 
+                {{__('language.signInBtn')}}
+            @endif
+        </button></a>
     </div>
 </header>
 <div class="top_menu">

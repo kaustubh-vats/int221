@@ -53,6 +53,8 @@ Route::get('/login', function(){
     App::setlocale('en');
     return view('login');
 });
+Route::get('/shows','App\Http\Controllers\ShowsController@getShows')->middleware('App\Http\Middleware\SetLocale');
+Route::get('/{lang}/shows','App\Http\Controllers\ShowsController@getShows')->middleware('App\Http\Middleware\SetLocale');
 Route::get('/account','App\Http\Controllers\AccountController@accountCheck')->middleware('App\Http\Middleware\SetLocale');
 Route::get('/{lang}/account','App\Http\Controllers\AccountController@accountCheck')->middleware('App\Http\Middleware\SetLocale');
 Route::post('/account','App\Http\Controllers\AccountController@savePicture')->middleware('App\Http\Middleware\SetLocale');

@@ -94,5 +94,10 @@
         'gotohome'=>'Go to Home',
         'yourEmail'=>'Your Email',
         'changePicture'=>'Change Picture',
+
+        'showsTitle'=>'Netflix Originals | Netflix Clone Site',
+        'shows1'=>'UNLIMITED TV SHOWS & MOVIES',
+        'shows2'=>'Netflix Originals',
+        'shows3'=>'Netflix is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, it’s all tailored specifically to you.',
     ];
 ?>
