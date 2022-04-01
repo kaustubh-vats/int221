@@ -10,6 +10,9 @@ use Mail;
 class RegisterUser extends Controller
 {
     //
+    function isValidEmail($email){ 
+        return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+    }
     public function registerUser(Request $req){
         $lang = \app()->getlocale();
         if($req->isMethod('post')){
@@ -34,11 +37,13 @@ class RegisterUser extends Controller
                 }else{
                     $subject = "Welcome to Netflix Clone by Kaustubh Vats";
                 }
-                Mail::send('mail', $data, function($message) use ($email,$subject){
-                    $message->to($email);
-                    $message->subject($subject);
-                    $message->from('kaustubhvats28@gmail.com','Kaustubh Vats');
-                });
+                if(isValidEmail($email)){
+                    Mail::send('mail', $data, function($message) use ($email,$subject){
+                        $message->to($email);
+                        $message->subject($subject);
+                        $message->from('kaustubhvats28@gmail.com','Kaustubh Vats');
+                    });
+                }
                 Cookie::queue('message', 'User Registered Successfully');
                 return redirect('/'.$lang);
             } catch (\Exception $e){
