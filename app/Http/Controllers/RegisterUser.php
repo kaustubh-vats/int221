@@ -28,8 +28,7 @@ class RegisterUser extends Controller
                 if(count($results)>0){
                     Cookie::queue('message', 'User Already Registered');
                     return redirect('/'.$lang);
-                }
-                DB::insert('insert into users(email,password,image) values(?,?,?)',[$email,$password,'default']);  
+                } 
                 session(['email'=>$email]);
                 $subject = "";
                 if($lang=='in-hi'){
@@ -38,14 +37,18 @@ class RegisterUser extends Controller
                     $subject = "Welcome to Netflix Clone by Kaustubh Vats";
                 }
                 if($this->isValidEmail($email)){
+                    DB::insert('insert into users(email,password,image) values(?,?,?)',[$email,$password,'default']); 
                     Mail::send('mail', $data, function($message) use ($email,$subject){
                         $message->to($email);
                         $message->subject($subject);
                         $message->from('kaustubhvats28@gmail.com','Kaustubh Vats');
                     });
+                    Cookie::queue('message', 'User Registered Successfully');
+                    return redirect('/'.$lang);
+                } else {
+                    Cookie::queue('message', 'Invalid Email');
+                    return redirect('/'.$lang);
                 }
-                Cookie::queue('message', 'User Registered Successfully');
-                return redirect('/'.$lang);
             } catch (\Exception $e){
                 Cookie::queue('message', 'Failed to register User');
                 return redirect('/'.$lang);
