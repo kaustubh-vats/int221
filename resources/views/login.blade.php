@@ -27,7 +27,7 @@
     @endif
 <div class="login_container">
     <div class="imgcont">
-        <img class="bg_img" src="/imgs/bg-hi.jpg" alt="">
+        <img class="bg_img" src=@if( Config::get("app.locale") == 'en') "/imgs/bg-en.jpg" @else "/imgs/bg-hi.jpg" @endif alt="">
         <div class="shadow"></div>
     </div>
     <div class="main_login">

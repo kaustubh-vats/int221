@@ -1,4 +1,4 @@
-const currlocation = (document.URL == 'http://localhost:8000/in-hi/login/') ? 'hi' : 'en';
+const currlocation = (document.URL == 'http://localhost:8000/in-hi/login/' || document.URL == 'http://localhost:8000/in-hi/login') ? 'hi' : 'en';
 
 function inputfocused() {
     const label = document.getElementById("hero_label");
